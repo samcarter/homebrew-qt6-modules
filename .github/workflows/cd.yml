@@ -128,7 +128,7 @@ jobs:
 
     - name: Install Dependencies
       run: |
-        wget https://github.com/sunderme/homebrew-qt6-modules/releases/download/${{ env.QT_VERSION }}/QtBase-${{ env.QT_VERSION }}-Darwin.tar.xz
+        wget https://github.com/samcarter/homebrew-qt6-modules/releases/download/${{ env.QT_VERSION }}/QtBase-${{ env.QT_VERSION }}-Darwin.tar.xz
         sudo tar xvf ./QtBase-${{ env.QT_VERSION }}-Darwin.tar.xz -C /usr/local
         rm QtBase-${{ env.QT_VERSION }}-Darwin.tar.xz
 
@@ -188,7 +188,7 @@ jobs:
 
     - name: Install Dependencies
       run: |
-        wget https://github.com/sunderme/homebrew-qt6-modules/releases/download/${{ env.QT_VERSION }}/QtBase-${{ env.QT_VERSION }}-Darwin-M1.tar.xz
+        wget https://github.com/samcarter/homebrew-qt6-modules/releases/download/${{ env.QT_VERSION }}/QtBase-${{ env.QT_VERSION }}-Darwin-M1.tar.xz
         sudo tar xvf ./QtBase-${{ env.QT_VERSION }}-Darwin-M1.tar.xz -C /usr/local
         rm QtBase-${{ env.QT_VERSION }}-Darwin-M1.tar.xz
 
@@ -249,7 +249,7 @@ jobs:
 
     - name: Install Dependencies
       run: |
-        wget https://github.com/sunderme/homebrew-qt6-modules/releases/download/${{ env.QT_VERSION }}/QtBase-${{ env.QT_VERSION }}-Darwin.tar.xz
+        wget https://github.com/samcarter/homebrew-qt6-modules/releases/download/${{ env.QT_VERSION }}/QtBase-${{ env.QT_VERSION }}-Darwin.tar.xz
         sudo tar xvf ./QtBase-${{ env.QT_VERSION }}-Darwin.tar.xz -C /usr/local
         rm QtBase-${{ env.QT_VERSION }}-Darwin.tar.xz
 
@@ -309,7 +309,7 @@ jobs:
 
     - name: Install Dependencies
       run: |
-        wget https://github.com/sunderme/homebrew-qt6-modules/releases/download/${{ env.QT_VERSION }}/QtBase-${{ env.QT_VERSION }}-Darwin-M1.tar.xz
+        wget https://github.com/samcarter/homebrew-qt6-modules/releases/download/${{ env.QT_VERSION }}/QtBase-${{ env.QT_VERSION }}-Darwin-M1.tar.xz
         sudo tar xvf ./QtBase-${{ env.QT_VERSION }}-Darwin-M1.tar.xz -C /usr/local
         rm QtBase-${{ env.QT_VERSION }}-Darwin-M1.tar.xz
 
@@ -370,7 +370,7 @@ jobs:
 
     - name: Install Dependencies
       run: |
-        wget https://github.com/sunderme/homebrew-qt6-modules/releases/download/${{ env.QT_VERSION }}/QtBase-${{ env.QT_VERSION }}-Darwin.tar.xz
+        wget https://github.com/samcarter/homebrew-qt6-modules/releases/download/${{ env.QT_VERSION }}/QtBase-${{ env.QT_VERSION }}-Darwin.tar.xz
         sudo tar xvf ./QtBase-${{ env.QT_VERSION }}-Darwin.tar.xz -C /usr/local
         rm QtBase-${{ env.QT_VERSION }}-Darwin.tar.xz
 
@@ -430,7 +430,7 @@ jobs:
 
     - name: Install Dependencies
       run: |
-        wget https://github.com/sunderme/homebrew-qt6-modules/releases/download/${{ env.QT_VERSION }}/QtBase-${{ env.QT_VERSION }}-Darwin-M1.tar.xz
+        wget https://github.com/samcarter/homebrew-qt6-modules/releases/download/${{ env.QT_VERSION }}/QtBase-${{ env.QT_VERSION }}-Darwin-M1.tar.xz
         sudo tar xvf ./QtBase-${{ env.QT_VERSION }}-Darwin-M1.tar.xz -C /usr/local
         rm QtBase-${{ env.QT_VERSION }}-Darwin-M1.tar.xz
 
@@ -491,7 +491,7 @@ jobs:
 
     - name: Install Dependencies
       run: |
-        wget https://github.com/sunderme/homebrew-qt6-modules/releases/download/${{ env.QT_VERSION }}/QtBase-${{ env.QT_VERSION }}-Darwin.tar.xz
+        wget https://github.com/samcarter/homebrew-qt6-modules/releases/download/${{ env.QT_VERSION }}/QtBase-${{ env.QT_VERSION }}-Darwin.tar.xz
         sudo tar xvf ./QtBase-${{ env.QT_VERSION }}-Darwin.tar.xz -C /usr/local
         rm QtBase-${{ env.QT_VERSION }}-Darwin.tar.xz
 
@@ -551,7 +551,7 @@ jobs:
 
     - name: Install Dependencies
       run: |
-        wget https://github.com/sunderme/homebrew-qt6-modules/releases/download/${{ env.QT_VERSION }}/QtBase-${{ env.QT_VERSION }}-Darwin-M1.tar.xz
+        wget https://github.com/samcarter/homebrew-qt6-modules/releases/download/${{ env.QT_VERSION }}/QtBase-${{ env.QT_VERSION }}-Darwin-M1.tar.xz
         sudo tar xvf ./QtBase-${{ env.QT_VERSION }}-Darwin-M1.tar.xz -C /usr/local
         rm QtBase-${{ env.QT_VERSION }}-Darwin-M1.tar.xz
 
@@ -612,7 +612,7 @@ jobs:
 
     - name: Install Dependencies
       run: |
-        wget https://github.com/sunderme/homebrew-qt6-modules/releases/download/${{ env.QT_VERSION }}/QtBase-${{ env.QT_VERSION }}-Darwin.tar.xz
+        wget https://github.com/samcarter/homebrew-qt6-modules/releases/download/${{ env.QT_VERSION }}/QtBase-${{ env.QT_VERSION }}-Darwin.tar.xz
         sudo tar xvf ./QtBase-${{ env.QT_VERSION }}-Darwin.tar.xz -C /usr/local
         rm QtBase-${{ env.QT_VERSION }}-Darwin.tar.xz
 
@@ -672,7 +672,7 @@ jobs:
 
     - name: Install Dependencies
       run: |
-        wget https://github.com/sunderme/homebrew-qt6-modules/releases/download/${{ env.QT_VERSION }}/QtBase-${{ env.QT_VERSION }}-Darwin-M1.tar.xz
+        wget https://github.com/samcarter/homebrew-qt6-modules/releases/download/${{ env.QT_VERSION }}/QtBase-${{ env.QT_VERSION }}-Darwin-M1.tar.xz
         sudo tar xvf ./QtBase-${{ env.QT_VERSION }}-Darwin-M1.tar.xz -C /usr/local
         rm QtBase-${{ env.QT_VERSION }}-Darwin-M1.tar.xz
 
@@ -733,10 +733,10 @@ jobs:
 
     - name: Install Dependencies
       run: |
-        wget https://github.com/sunderme/homebrew-qt6-modules/releases/download/${{ env.QT_VERSION }}/QtBase-${{ env.QT_VERSION }}-Darwin.tar.xz
+        wget https://github.com/samcarter/homebrew-qt6-modules/releases/download/${{ env.QT_VERSION }}/QtBase-${{ env.QT_VERSION }}-Darwin.tar.xz
         sudo tar xvf ./QtBase-${{ env.QT_VERSION }}-Darwin.tar.xz -C /usr/local
         rm QtBase-${{ env.QT_VERSION }}-Darwin.tar.xz
-        wget https://github.com/sunderme/homebrew-qt6-modules/releases/download/${{ env.QT_VERSION }}/Qt5Compat-${{ env.QT_VERSION }}-Darwin.tar.xz
+        wget https://github.com/samcarter/homebrew-qt6-modules/releases/download/${{ env.QT_VERSION }}/Qt5Compat-${{ env.QT_VERSION }}-Darwin.tar.xz
         sudo tar xvf ./Qt5Compat-${{ env.QT_VERSION }}-Darwin.tar.xz -C /usr/local/QtBase-${{ env.QT_VERSION }}-Darwin --strip-components=1
         rm Qt5Compat-${{ env.QT_VERSION }}-Darwin.tar.xz
 
@@ -792,10 +792,10 @@ jobs:
 
     - name: Install Dependencies
       run: |
-        wget https://github.com/sunderme/homebrew-qt6-modules/releases/download/${{ env.QT_VERSION }}/QtBase-${{ env.QT_VERSION }}-Darwin-M1.tar.xz
+        wget https://github.com/samcarter/homebrew-qt6-modules/releases/download/${{ env.QT_VERSION }}/QtBase-${{ env.QT_VERSION }}-Darwin-M1.tar.xz
         sudo tar xvf ./QtBase-${{ env.QT_VERSION }}-Darwin-M1.tar.xz -C /usr/local
         rm QtBase-${{ env.QT_VERSION }}-Darwin-M1.tar.xz
-        wget https://github.com/sunderme/homebrew-qt6-modules/releases/download/${{ env.QT_VERSION }}/Qt5Compat-${{ env.QT_VERSION }}-Darwin-M1.tar.xz
+        wget https://github.com/samcarter/homebrew-qt6-modules/releases/download/${{ env.QT_VERSION }}/Qt5Compat-${{ env.QT_VERSION }}-Darwin-M1.tar.xz
         sudo tar xvf ./Qt5Compat-${{ env.QT_VERSION }}-Darwin-M1.tar.xz -C /usr/local/QtBase-${{ env.QT_VERSION }}-Darwin --strip-components=1
         rm Qt5Compat-${{ env.QT_VERSION }}-Darwin-M1.tar.xz
 
@@ -852,7 +852,7 @@ jobs:
 
     - name: Install Dependencies
       run: |
-        wget https://github.com/sunderme/homebrew-qt6-modules/releases/download/${{ env.QT_VERSION }}/QtBase-${{ env.QT_VERSION }}-Darwin.tar.xz
+        wget https://github.com/samcarter/homebrew-qt6-modules/releases/download/${{ env.QT_VERSION }}/QtBase-${{ env.QT_VERSION }}-Darwin.tar.xz
         sudo tar xvf ./QtBase-${{ env.QT_VERSION }}-Darwin.tar.xz -C /usr/local
         rm QtBase-${{ env.QT_VERSION }}-Darwin.tar.xz
         brew install cairo fontconfig freetype gettext jpeg libpng libtiff little-cms2 openjpeg
@@ -909,7 +909,7 @@ jobs:
 
     - name: Install Dependencies
       run: |
-        wget https://github.com/sunderme/homebrew-qt6-modules/releases/download/${{ env.QT_VERSION }}/QtBase-${{ env.QT_VERSION }}-Darwin-M1.tar.xz
+        wget https://github.com/samcarter/homebrew-qt6-modules/releases/download/${{ env.QT_VERSION }}/QtBase-${{ env.QT_VERSION }}-Darwin-M1.tar.xz
         sudo tar xvf ./QtBase-${{ env.QT_VERSION }}-Darwin-M1.tar.xz -C /usr/local
         rm QtBase-${{ env.QT_VERSION }}-Darwin-M1.tar.xz
         brew install cairo fontconfig freetype gettext jpeg libpng libtiff little-cms2 openjpeg
