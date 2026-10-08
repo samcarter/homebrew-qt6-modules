@@ -5,7 +5,7 @@ on:
 env:
   QT_VERSION: 6.11.2
   QT_VERSION_MAJOR: "6.11"
-  POPPLER_VERSION: 26.09.0
+  POPPLER_VERSION: 26.10.0
 
 jobs:
 
@@ -949,73 +949,5 @@ jobs:
       with:
         tag_name: ${{ env.QT_VERSION }}
         files: poppler*.tar.xz
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUBTOKEN }}
-
-  win_x86:
-    name: win build (msys2)
-    runs-on: windows-latest
-    defaults:
-      run:
-        shell: msys2 {0}
-    steps:
-    - uses: actions/checkout@v6
-    - uses: msys2/setup-msys2@v2
-      with:
-        msystem: UCRT64
-        update: true
-        install: |
-          git make mingw-w64-ucrt-x86_64-cmake mingw-w64-ucrt-x86_64-toolchain mingw-w64-ucrt-x86_64-ninja
-          mingw-w64-ucrt-x86_64-qt6-base dos2unix base-devel
-    - name: fix CRLF
-      run: |
-        cd mingw-w64-poppler
-        dos2unix 0001-nopython-generate-enums.patch
-        dos2unix PKGBUILD
-    - name: build poppler package
-      run: |
-        cd mingw-w64-poppler
-        makepkg-mingw --cleanbuild --syncdeps --force --noconfirm
-        mv *.pkg.tar.zst ..
-
-    - name: Release
-      uses: softprops/action-gh-release@v3
-      with:
-        tag_name: ${{ env.QT_VERSION }}
-        files: ming*.pkg.tar.zst
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUBTOKEN }}
-
-  win10-arm:
-    name: win build (msys2,arm)
-    runs-on: windows-11-arm
-    defaults:
-      run:
-        shell: msys2 {0}
-    steps:
-    - uses: actions/checkout@v6
-    - uses: msys2/setup-msys2@v2
-      with:
-        msystem: CLANGARM64
-        update: true
-        install: |
-          git make mingw-w64-clang-aarch64-cmake mingw-w64-clang-aarch64-toolchain mingw-w64-clang-aarch64-ninja
-          mingw-w64-clang-aarch64-qt6-base dos2unix base-devel
-    - name: fix CRLF
-      run: |
-        cd mingw-w64-poppler
-        dos2unix 0001-nopython-generate-enums.patch
-        dos2unix PKGBUILD
-    - name: build poppler package
-      run: |
-        cd mingw-w64-poppler
-        makepkg-mingw --cleanbuild --syncdeps --force --noconfirm
-        mv *.pkg.tar.zst ..
-
-    - name: Release
-      uses: softprops/action-gh-release@v3
-      with:
-        tag_name: ${{ env.QT_VERSION }}
-        files: mingw*.pkg.tar.zst
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUBTOKEN }}
